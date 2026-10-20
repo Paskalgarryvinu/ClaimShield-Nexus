@@ -1,0 +1,65 @@
+{
+  "model_version": "1.0.0-logistic-temporal",
+  "trained_date": "2026-03-31",
+  "cutoff_date": "2026-01-01",
+  "random_seed": 42,
+  "feature_names": [
+    "pre_cutoff_claims",
+    "pre_cutoff_velocity_slope",
+    "claims_per_member",
+    "avg_billed",
+    "referral_concentration",
+    "has_prior_investigation",
+    "pre_cutoff_signal_count"
+  ],
+  "metrics": {
+    "30": {
+      "horizon_days": 30,
+      "holdout_auc": 0.82,
+      "holdout_precision": 0.75,
+      "holdout_recall": 0.8,
+      "holdout_accuracy": 0.997,
+      "coefficients": {
+        "pre_cutoff_claims": 0.0464,
+        "pre_cutoff_velocity_slope": -0.1515,
+        "claims_per_member": 0.1173,
+        "avg_billed": 0.0019,
+        "referral_concentration": -0.0156,
+        "has_prior_investigation": -0.0016,
+        "pre_cutoff_signal_count": 1.3251
+      }
+    },
+    "60": {
+      "horizon_days": 60,
+      "holdout_auc": 0.82,
+      "holdout_precision": 0.75,
+      "holdout_recall": 0.8,
+      "holdout_accuracy": 0.997,
+      "coefficients": {
+        "pre_cutoff_claims": 0.0464,
+        "pre_cutoff_velocity_slope": -0.1515,
+        "claims_per_member": 0.1173,
+        "avg_billed": 0.0019,
+        "referral_concentration": -0.0156,
+        "has_prior_investigation": -0.0016,
+        "pre_cutoff_signal_count": 1.3251
+      }
+    },
+    "90": {
+      "horizon_days": 90,
+      "holdout_auc": 0.82,
+      "holdout_precision": 0.75,
+      "holdout_recall": 0.8,
+      "holdout_accuracy": 0.99,
+      "coefficients": {
+        "pre_cutoff_claims": 0.0892,
+        "pre_cutoff_velocity_slope": 0.3451,
+        "claims_per_member": 2.4729,
+        "avg_billed": -0.0131,
+        "referral_concentration": 2.6532,
+        "has_prior_investigation": -0.9136,
+        "pre_cutoff_signal_count": 0.3537
+      }
+    }
+  }
+}

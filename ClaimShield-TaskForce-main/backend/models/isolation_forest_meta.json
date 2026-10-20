@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-isolation-forest",
+  "algorithm": "Liu, Ting, Zhou (2008) Isolation Forest",
+  "trained_date": "2026-03-31",
+  "n_estimators": 100,
+  "features": [
+    "claims_per_member_zscore",
+    "avg_billed_zscore",
+    "avg_paid_zscore",
+    "paid_to_billed_ratio_zscore",
+    "max_referral_conc_zscore",
+    "duplicate_billing_rate_zscore",
+    "unbundling_rate_zscore",
+    "phantom_service_rate_zscore",
+    "excessive_utilization_rate_zscore"
+  ],
+  "random_seed": 42,
+  "total_providers": 1190
+}
